@@ -1,1 +1,121 @@
-/* basic layout styling for initial prototyping */
+/* basic layout styling for initial prototyping
+I would never use this much absolute positioning. :-D */
+
+:root{
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  font-family: arial, helvetica, sans-serif;
+  position: relative;
+}
+
+p{
+  margin: 10px 0;
+}
+
+header{
+  position: relative;
+}
+
+#hdr-address{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#hdr-contact{
+  width: 100%;
+  background-color: lightgrey;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  padding: 10px;
+}
+
+#hdr-contact .phone::after{
+  content: " | "
+}
+
+#hdr-contact .social{
+  position: absolute;
+  right: 25px;
+}
+
+header nav{
+  position: absolute;
+  left: 0;
+  top: 150px;
+  background-color: dimgrey;
+  width: 100%;
+  padding: 10px;
+}
+
+header nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header nav ul li:first-child{
+  margin-left: 0;
+}
+
+header nav ul li a{
+  color: white;
+}
+
+ul.dropdown{
+  display: none;
+}
+
+main{
+  position: absolute;
+  top: 180px;
+  left: 0;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+footer{
+  position: absolute;
+  top: 400px;
+  left: 0;
+  display: flex;
+  width: 100%;
+}
+
+footer section{
+  width: 33%;
+  padding: 10px;
+  background-color: dimgrey;
+  color: white;
+}
+
+footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer ul li{
+  list-style-type: none;
+}
+
+footer nav ul li a{
+  color: white;
+}
+
+footer ul li ul{
+  padding-left: 15px;
+}
