@@ -97,7 +97,7 @@ section.cards article img{
 }
 footer{
   position: absolute;
-  top: 700px;
+  top: 800px;
   left: 0;
   display: flex;
   width: 100%;
@@ -110,10 +110,16 @@ footer section{
   color: white;
 }
 
-footer::after {
+section.cards::after, footer::after {
   content: "";
   display: block;
   clear: both;
+}
+
+article.featured-instructor header img{
+  width: 15%;
+  margin-right: 15px;
+  float: left;
 }
 
 footer ul li{
