@@ -1,0 +1,29 @@
+@media only screen and (max-width: 600px) {
+  header.page-top{
+    grid-template-columns: 1fr 1fr;
+  }
+
+header.page-top a.logo-link{
+  grid-row: 1 / span 2;
+}
+
+#hdr-address{
+  grid-column-start: 2;
+}
+  #hdr-address .addr1,
+  #hdr-address .addr2,
+  #hdr-contact .social{
+    display: none;
+  }
+
+  #hdr-contact{
+    grid-column: 2;
+    text-align: right;
+    display: block;
+    background-color: transparent;
+}
+#hdr-contact .phone::after{
+  content: "\a";
+  white-space: pre;
+}
+}

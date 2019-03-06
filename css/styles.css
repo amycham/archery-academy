@@ -15,7 +15,6 @@ body{
   font-size: 1.5rem;
   font-family: arial, helvetica, sans-serif;
   background-color: burlywood;
-
 }
 
 p{
@@ -32,6 +31,10 @@ header.page-top{
 
 header a.logo-link{
   padding: 10px;
+}
+
+header.page-top a.logo-link img{
+  width: 90%;
 }
 
 #hdr-address{
