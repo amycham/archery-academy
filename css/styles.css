@@ -2,6 +2,12 @@
 I would never use this much absolute positioning. :-D */
 
 :root{
+  --color-primary: rgb(3, 163, 223);
+  --color-secondary-one: rgb(27, 68, 127);
+  --color-highlight: rgb(236, 183, 34);
+  --color-dk-grey: rgb(68, 68, 68);
+  --color-lt-grey: rgb(190, 190, 190);
+
   font-size: 62.5%;
 }
 
@@ -14,7 +20,6 @@ I would never use this much absolute positioning. :-D */
 body{
   font-size: 1.5rem;
   font-family: arial, helvetica, sans-serif;
-  background-color: burlywood;
 }
 
 p{
@@ -26,11 +31,11 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 }
 
 header.page-top{
-  background-color: aliceblue;
+  background-color: var(--color-primary);
 }
 header a.logo-link{
   padding: 10px;
@@ -44,15 +49,23 @@ header.page-top a.logo-link img{
   grid-column-start: 3;
   text-align: right;
   padding: 10px;
+  color: rgb(255, 255, 255);
 }
 
 #hdr-contact{
   grid-column: 1 / span 3;
-  background-color: lightgrey;
+  background-color: var(--color-highlight);
   display: grid;
   grid-template-columns: 2fr 1fr;
   padding: 10px;
+  color: var(--color-dk-grey);
+  font-weight: bold;
+  font-size: 1.75rem;
 
+}
+
+#hdr-contact a{
+  color: var(--color-dk-grey);
 }
 
 #hdr-contact .phone::after{
@@ -65,12 +78,18 @@ header.page-top a.logo-link img{
 }
 
 #hdr-contact .social a{
-  margin: 0 10px;
+  margin: 0 8px;
+  font-size: 2.25rem;
+
+}
+
+#hdr-contact a:hover{
+  color: rgb(255, 255, 255);
 }
 
 header nav{
   grid-column: 1 / span 3;
-  background-color: dimgrey;
+  background-color: var(--color-secondary-one);
   padding: 10px;
 
 }
@@ -82,7 +101,7 @@ header nav ul{
 }
 header nav ul li{
   list-style-type: none;
-  margin: 0 10px;
+  margin: 0 5px 0 10px;
 }
 
 header nav ul li:first-child{
@@ -90,16 +109,26 @@ header nav ul li:first-child{
 }
 
 header nav ul li a{
-  color: white;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
+header nav ul li::after{
+  content: "\ \ \ /";
+  white-space: pre;
+  color: rgb(255, 255, 255);
+}
+
+header nav ul li a:hover{
+  color: var(--color-primary);
+}
 ul.dropdown{
   display: none;
 }
 
 main{
 
-  
+
 }
 
 section.cards article{
