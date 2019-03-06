@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 685px) {
   header.page-top{
     grid-template-columns: 1fr 1fr;
   }
@@ -25,10 +25,16 @@
       text-align: right;
       display: block;
       background-color: transparent;
+      color: rgb(255, 255, 255);
   }
+
   #hdr-contact .phone::after{
     content: "\a";
     white-space: pre;
+  }
+
+  #hdr-contact a{
+    color: rgb(255, 255, 255);
   }
 
   footer{
