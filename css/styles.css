@@ -13,29 +13,40 @@ I would never use this much absolute positioning. :-D */
 
 body{
   font-size: 1.5rem;
-  width: 100%;
-  margin: auto;
   font-family: arial, helvetica, sans-serif;
-  position: relative;
+  background-color: burlywood;
+
 }
 
 p{
   margin: 10px 0;
 }
 
-header{
+header.page-top{
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  padding: 10px 0;
+}
 
+header a.logo-link{
+  padding: 10px;
 }
 
 #hdr-address{
-
+  grid-column-start: 3;
+  text-align: right;
+  padding: 10px;
 }
 
 #hdr-contact{
-
+  grid-column: 1 / span 3;
   background-color: lightgrey;
-
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   padding: 10px;
+
 }
 
 #hdr-contact .phone::after{
@@ -43,19 +54,28 @@ header{
 }
 
 #hdr-contact .social{
+  display: flex;
+  justify-content: flex-end;
+}
 
+#hdr-contact .social a{
+  margin: 0 10px;
 }
 
 header nav{
-
+  grid-column: 1 / span 3;
   background-color: dimgrey;
-
   padding: 10px;
+
 }
 
+header nav ul{
+  display: flex;
+  justify-content: flex-start;
+
+}
 header nav ul li{
   list-style-type: none;
-  display: inline-block;
   margin: 0 10px;
 }
 
@@ -70,7 +90,7 @@ header nav ul li a{
 ul.dropdown{
   display: none;
 }
-
+/*
 main{
 
   padding: 10px;
@@ -110,5 +130,5 @@ footer section{
 
 
 article.featured-instructor header img{
-  
-}
+
+}*/
