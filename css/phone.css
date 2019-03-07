@@ -36,8 +36,18 @@
   #hdr-contact a{
     color: rgb(255, 255, 255);
   }
-  header.page-top nav{
-    position: static;
+
+  header nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  header nav ul li{
+    margin: 5px 0;
+  }
+  header nav ul li::after{
+    content: "";
+
   }
 
   main{
@@ -64,31 +74,24 @@
     color: rgb(255, 255, 255);
   }
 
-  main section.cards article:nth-child(3){
-    background-color: var(--color-highlight);
-  }
-
-  main section.cards article:nth-child(4){
-    background-color: var(--color-secondary-one);
-    color: rgb(255, 255, 255);
-  }
-
-  main section.cards article:nth-child(4) h3{
+  main section.cards article:nth-child(2) h3{
     color: rgb(255, 255, 255);
     border-color: rgb(255, 255, 255);
   }
 
-  main section.cards article:nth-child(4) a{
-    color: rgb(255, 255, 255);
+  main section.cards article:nth-child(3){
+    background-color: var(--color-highlight);
   }
+
   main section.cards article p{
     margin: 10px 0;
   }
+
   footer{
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   footer section{
     width: 50%;
   }
@@ -96,5 +99,12 @@
   footer section:nth-child(3){
     order: -1;
     width: 100%;
+  }
+
+  /* group classes page */
+  #group-classes section.cards article ul,
+  #group-classes section.cards article h3{
+    margin: 10px 0;
+    padding-left: 0;
   }
 }
