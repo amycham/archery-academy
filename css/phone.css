@@ -14,18 +14,19 @@
   #hdr-address{
     grid-column-start: 2;
   }
-    #hdr-address .addr1,
-    #hdr-address .addr2,
-    #hdr-contact .social{
-      display: none;
-    }
 
-    #hdr-contact{
-      grid-column: 2;
-      text-align: right;
-      display: block;
-      background-color: transparent;
-      color: rgb(255, 255, 255);
+  #hdr-address .addr1,
+  #hdr-address .addr2,
+  #hdr-contact .social{
+    display: none;
+  }
+
+  #hdr-contact{
+    grid-column: 2;
+    text-align: right;
+    display: block;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
   }
 
   #hdr-contact .phone::after{
@@ -45,9 +46,9 @@
   header nav ul li{
     margin: 5px 0;
   }
+
   header nav ul li::after{
     content: "";
-
   }
 
   main{
@@ -58,6 +59,7 @@
     padding: 10px;
     font-size: 20px;
   }
+
   main section.cards{
     display: block;
   }
@@ -65,10 +67,12 @@
   main section.cards article{
     padding: 10px;
   }
+
   article h3{
     color: var(--color-secondary-one);
     border-bottom: 1px solid var(--color-secondary-one);
   }
+  
   main section.cards article:nth-child(2){
     background-color: var(--color-primary);
     color: rgb(255, 255, 255);

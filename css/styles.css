@@ -66,7 +66,6 @@ header.page-top a.logo-link img{
   color: var(--color-dk-grey);
   font-weight: bold;
   font-size: 1.75rem;
-
 }
 
 #hdr-contact a{
@@ -85,7 +84,6 @@ header.page-top a.logo-link img{
 #hdr-contact .social a{
   margin: 0 8px;
   font-size: 2.25rem;
-
 }
 
 #hdr-contact a:hover{
@@ -96,14 +94,13 @@ header nav{
   grid-column: 1 / span 3;
   background-color: var(--color-secondary-one);
   padding: 10px;
-
 }
 
 header nav ul{
   display: flex;
   justify-content: flex-start;
-
 }
+
 header nav ul li{
   list-style-type: none;
   margin: 0 5px 0 10px;
@@ -131,6 +128,7 @@ header nav ul li:last-child::after{
 header nav ul li a:hover{
   color: var(--color-primary);
 }
+
 ul.dropdown{
   display: none;
 }
@@ -138,12 +136,14 @@ ul.dropdown{
 main{
   padding: 10px;
 }
+
 main section.cards{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px 10px;
 
 }
+
 section.cards header{
   grid-column: 1 / span 3
 }
@@ -153,6 +153,14 @@ h2{
   color: var(--color-dk-grey);
   font-weight: bold;
   font-size: 24px;
+}
+
+article h3{
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 /* maintain aspect ratio on YouTube embeds */
@@ -169,15 +177,6 @@ h2{
   width: 100%;
   height: 100%;
 }
-
-article h3{
-  color: var(--color-primary);
-  border-bottom: 1px solid var(--color-primary);
-  padding-bottom: 5px;
-  font-weight: bold;
-  font-size: 17px;
-}
-
 
 footer{
   background: var(--color-secondary-one) url('../images/footerimage.jpg') top center no-repeat;
@@ -229,6 +228,7 @@ footer .social a{
 footer .social a:first-child{
   margin-left: 0;
 }
+
 /* featured instructor block */
 main section.featured-instructor{
   background-color: var(--color-secondary-one);
@@ -240,6 +240,7 @@ main section.featured-instructor article{
   display: grid;
   grid-template-columns: 1fr 3fr;
 }
+
 main section.featured-instructor h3{
   color: rgb(255, 255, 255);
   border-bottom: 1px solid var(--color-highlight);
@@ -251,6 +252,7 @@ main section.featured-instructor h3{
 main section.featured-instructor article header{
   grid-row: 1 / span 7;
 }
+
 main section.featured-instructor article header img{
   width: 80%;
   margin: 0 10%;
@@ -264,8 +266,8 @@ main section.featured-instructor article h5{
   color: var(--color-highlight);
   text-transform: uppercase;
   font-weight: normal;
-
 }
+
 main section.featured-instructor article a{
   color: rgb(255, 255, 255);
 }
@@ -280,12 +282,12 @@ main section.featured-instructor article blockquote{
 article.group-promo p{
   margin: 5px 0 15px 0;
 }
+
 article.group-promo ul{
   list-style-type: none;
 }
 
 /* group classes page */
-
 #group-classes section.cards article ul{
   list-style-type: none;
   padding: 0 0 10px 10px;
