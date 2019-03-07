@@ -179,7 +179,7 @@ article h3{
 }
 
 footer{
-  background: var(--color-secondary-one) url('../images/footerimage.jpg') top center no-repeat;
+  background: var(--color-secondary-one) url('../images/footerImage.jpg') top center no-repeat;
   padding-bottom: 10px;
 }
 
