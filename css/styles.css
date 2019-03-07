@@ -18,12 +18,13 @@ I would never use this much absolute positioning. :-D */
 }
 
 body{
-  font-size: 1.5rem;
+  font-size: 17px;
   font-family: arial, helvetica, sans-serif;
+  color: var(--color-dk-grey);
 }
 
 p{
-  margin: 10px 0;
+  margin: 10px;
 }
 
 header.page-top,
@@ -42,25 +43,26 @@ header a.logo-link{
 }
 
 header.page-top a.logo-link img{
-  width: 90%;
+  width: 80%;
 }
 
 #hdr-address{
   grid-column-start: 3;
   text-align: right;
-  padding: 10px;
+  padding: 5px 10px;
   color: rgb(255, 255, 255);
 }
 
 #hdr-address a{
   color: rgb(255, 255, 255);
 }
+
 #hdr-contact{
   grid-column: 1 / span 3;
   background-color: var(--color-highlight);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding: 10px;
+  padding: 5px 10px;
   color: var(--color-dk-grey);
   font-weight: bold;
   font-size: 1.75rem;
@@ -133,17 +135,50 @@ ul.dropdown{
 }
 
 main{
-
+  padding: 10px;
+}
+main section.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px 10px;
 
 }
-
-section.cards article{
-
+section.cards header{
+  grid-column: 1 / span 3
 }
 
-section.cards article img{
-  width: 90%;
-  margin: 0 3%;
+h2{
+  padding: 10px 0;
+  color: var(--color-dk-grey);
+  font-weight: bold;
+  font-size: 24px;
+}
+.aspect-ratio{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 65%;
+}
+.aspect-ratio iframe{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+article h3{
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 17px;
+}
+article.group-promo p{
+  margin: 5px 0 15px 0;
+}
+article.group-promo ul{
+  list-style-type: none;
 }
 
 footer{
@@ -163,6 +198,10 @@ footer section a{
 
 footer section a:hover{
   color: var(--color-primary);
+}
+
+footer p{
+  margin: 10px 0;
 }
 
 footer ul li{

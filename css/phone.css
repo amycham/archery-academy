@@ -36,12 +36,59 @@
   #hdr-contact a{
     color: rgb(255, 255, 255);
   }
+  header.page-top nav{
+    position: static;
+  }
 
+  main{
+    padding: 0;
+  }
+
+  h2{
+    padding: 10px;
+    font-size: 20px;
+  }
+  main section.cards{
+    display: block;
+  }
+
+  main section.cards article{
+    padding: 10px;
+  }
+  article h3{
+    color: var(--color-secondary-one);
+    border-bottom: 1px solid var(--color-secondary-one);
+  }
+  main section.cards article:nth-child(2){
+    background-color: var(--color-primary);
+    color: rgb(255, 255, 255);
+  }
+
+  main section.cards article:nth-child(3){
+    background-color: var(--color-highlight);
+  }
+
+  main section.cards article:nth-child(4){
+    background-color: var(--color-secondary-one);
+    color: rgb(255, 255, 255);
+  }
+
+  main section.cards article:nth-child(4) h3{
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+  }
+
+  main section.cards article:nth-child(4) a{
+    color: rgb(255, 255, 255);
+  }
+  main section.cards article p{
+    margin: 10px 0;
+  }
   footer{
     display: flex;
     flex-wrap: wrap;
   }
-
+  
   footer section{
     width: 50%;
   }
