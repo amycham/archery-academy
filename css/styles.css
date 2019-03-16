@@ -38,6 +38,13 @@ header.page-top{
   background-color: var(--color-primary);
 }
 
+.skiplink, .hiddentext{
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  left: -5000px;
+}
 header a.logo-link{
   padding: 10px;
 }
